@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dp_8"
+    app:cardElevation="@dimen/dp_12">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_character__iv_character_image"
+            android:layout_width="@dimen/dp_64"
+            android:layout_height="@dimen/dp_64"
+            android:layout_marginVertical="@dimen/dp_12"
+            android:layout_marginStart="@dimen/dp_12" />
+
+        <LinearLayout
+            android:id="@+id/item_character__ll_title_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_16"
+            android:layout_toEndOf="@id/item_character__iv_character_image"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_character__tv_character_title"
+                style="@style/TextView.Main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Rick Sanchez" />
+
+            <TextView
+                android:id="@+id/item_character__tv_character_location"
+                style="@style/TextView.Secondary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Earth" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

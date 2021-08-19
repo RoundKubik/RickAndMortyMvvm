@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="detail_character_status_title">Status:</string>
+    <string name="detail_character_species_title">Species:</string>
+    <string name="detail_character_origin_title">Origin:</string>
+    <string name="detail_character_gender_title">Gender:</string>
+    <string name="error_loading_characters">Oops… something went wrong when characters loading</string>
+</resources>

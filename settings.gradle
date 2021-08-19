@@ -1,0 +1,4 @@
+rootProject.name = "HomeWorkMvvmRickAndMortyApi"
+include ':app'
+include ':common'
+include ':feature'

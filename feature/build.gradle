@@ -1,0 +1,82 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+}
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode versionCode
+        versionName versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        coreLibraryDesugaringEnabled true
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':common')
+
+    implementation recyclerViewDep
+    implementation materialDep
+    implementation kotlinDep
+
+    implementation androidDep
+    implementation constraintDep
+
+    implementation navigationFragmentDep
+    implementation navigationUiDep
+
+    implementation daggerDep
+    kapt daggerKapt
+    kapt metadataKapt
+
+    implementation okHttpDep
+    implementation retrofitDep
+    implementation retrofitAdapterDep
+    implementation rxJavaDep
+    implementation rxAndroidDep
+    implementation rxKotlinDep
+    implementation coroutinesDep
+    implementation coroutinesAndroidDep
+
+    implementation lifecycleVMDep
+    implementation lifecycleLiveDataDep
+    implementation lifecycleRuntimeDep
+    kapt lifecycleKapt
+
+    coreLibraryDesugaring coreLibDesugaringDep
+
+    implementation activityKtxDep
+    implementation fragmentKtxDep
+    implementation coliDep
+    implementation circleImageViewDep
+    implementation "com.squareup.moshi:moshi-kotlin:1.12.0"
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.2.2"
+    implementation 'com.google.code.gson:gson:2.8.7'
+}

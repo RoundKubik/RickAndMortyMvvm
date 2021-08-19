@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "489459263943",
+    "project_id": "pumity-da63a",
+    "storage_bucket": "pumity-da63a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489459263943:android:7bab7019fcedc3b42311e2",
+        "android_client_info": {
+          "package_name": "studio.clapp.pumity.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489459263943-d5kkefj5mavg6oqbjjc9k709aqainbbq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "studio.clapp.pumity",
+            "certificate_hash": "1a6f5c064f8a97cf235daf44cb2ed4ed296d27e0"
+          }
+        },
+        {
+          "client_id": "489459263943-2s8pod45tvfisehuorjfcf2fvr2a3msf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUfJ-bqKg-VOrt1RsKeEXObKaHvn8Y8e8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "489459263943-2s8pod45tvfisehuorjfcf2fvr2a3msf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "489459263943-mio19dl85mi9hq5e9g7jt2ktvanv3ag7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "studio.clapp.PumityiOS"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
