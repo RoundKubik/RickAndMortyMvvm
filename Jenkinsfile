@@ -2,9 +2,11 @@ pipeline {
 
 	stages {
 		stage('Clone Git repository') {
-			echo "checkout scm"
-			checkout scm
+			steps {
+				echo "checkout scm"
+				checkout scm
+				
+			}
 		}
-
 	}
 }
