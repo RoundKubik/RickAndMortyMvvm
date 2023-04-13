@@ -1,5 +1,10 @@
-stage('Clone Git repository') {
-	echo "checkout scm"
-	checkout scm
-	
+pipeline {
+
+	stages {
+		stage('Clone Git repository') {
+			echo "checkout scm"
+			checkout scm
+		}
+
+	}
 }
